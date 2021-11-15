@@ -11,8 +11,9 @@
 		DADBCEA227422F7000E5CD51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADBCEA127422F7000E5CD51 /* SceneDelegate.swift */; };
 		DADBCEA427422F7000E5CD51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADBCEA327422F7000E5CD51 /* ViewController.swift */; };
 		DADBCEA727422F7000E5CD51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADBCEA527422F7000E5CD51 /* Main.storyboard */; };
-		DADBCEA927422F7300E5CD51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DADBCEA827422F7300E5CD51 /* Assets.xcassets */; };
 		DADBCEAC27422F7300E5CD51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADBCEAA27422F7300E5CD51 /* LaunchScreen.storyboard */; };
+		DADBCEB7274234A000E5CD51 /* LogStore in Frameworks */ = {isa = PBXBuildFile; productRef = DADBCEB6274234A000E5CD51 /* LogStore */; };
+		DADBCEBB274246F200E5CD51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DADBCEBA274246F200E5CD51 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,9 +22,9 @@
 		DADBCEA127422F7000E5CD51 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DADBCEA327422F7000E5CD51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DADBCEA627422F7000E5CD51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DADBCEA827422F7300E5CD51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DADBCEAB27422F7300E5CD51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DADBCEAD27422F7300E5CD51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DADBCEBA274246F200E5CD51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DADBCEB7274234A000E5CD51 /* LogStore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,9 +62,9 @@
 				DADBCEA127422F7000E5CD51 /* SceneDelegate.swift */,
 				DADBCEA327422F7000E5CD51 /* ViewController.swift */,
 				DADBCEA527422F7000E5CD51 /* Main.storyboard */,
-				DADBCEA827422F7300E5CD51 /* Assets.xcassets */,
 				DADBCEAA27422F7300E5CD51 /* LaunchScreen.storyboard */,
 				DADBCEAD27422F7300E5CD51 /* Info.plist */,
+				DADBCEBA274246F200E5CD51 /* Assets.xcassets */,
 			);
 			path = "Safe Cargo Delivery";
 			sourceTree = "<group>";
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = "Safe Cargo Delivery";
+			packageProductDependencies = (
+				DADBCEB6274234A000E5CD51 /* LogStore */,
+			);
 			productName = "Safe Cargo Delivery";
 			productReference = DADBCE9C27422F7000E5CD51 /* Safe Cargo Delivery.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = DADBCE9327422F7000E5CD51;
+			packageReferences = (
+				DADBCEB5274234A000E5CD51 /* XCRemoteSwiftPackageReference "LogStore" */,
+			);
 			productRefGroup = DADBCE9D27422F7000E5CD51 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DADBCEAC27422F7300E5CD51 /* LaunchScreen.storyboard in Resources */,
-				DADBCEA927422F7300E5CD51 /* Assets.xcassets in Resources */,
+				DADBCEBB274246F200E5CD51 /* Assets.xcassets in Resources */,
 				DADBCEA727422F7000E5CD51 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DADBCEB5274234A000E5CD51 /* XCRemoteSwiftPackageReference "LogStore" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/philmui/LogStore.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DADBCEB6274234A000E5CD51 /* LogStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DADBCEB5274234A000E5CD51 /* XCRemoteSwiftPackageReference "LogStore" */;
+			productName = LogStore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DADBCE9427422F7000E5CD51 /* Project object */;
 }
